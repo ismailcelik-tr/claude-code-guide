@@ -12,6 +12,10 @@
 | [Legacy Modernizasyon](./02-legacy-modernizasyon.md) | Eski kod tabanını Claude ile adım adım yeniliyorsun | 🟡 Orta |
 | [Production Krizi](./03-production-krizi.md) | Canlı sistemde acil hata var, hızlı müdahale gerekiyor | 🔴 İleri |
 | [Yeni Özellik Ekleme](./04-yeni-ozellik.md) | Mevcut projeye sıfır regresyonla özellik ekliyorsun | 🟡 Orta |
+| [Performans Optimizasyonu](./05-performans-optimizasyonu.md) | Yavaşlayan uygulamayı ölçerek optimize ediyorsun | 🟡 Orta |
+| [Güvenlik Denetimi](./06-guvenlik-denetimi.md) | Bağımlılık tarama ve kod analizi ile açıkları kapatıyorsun | 🔴 İleri |
+| [API Entegrasyonu](./07-api-entegrasyonu.md) | Üçüncü taraf API'yi mock ile geliştirip production'a alıyorsun | 🟢 Başlangıç |
+| [Database Migrasyonu](./08-database-migrasyonu.md) | Zero-downtime şema değişikliği ve veri taşıma yapıyorsun | 🔴 İleri |
 
 ---
 

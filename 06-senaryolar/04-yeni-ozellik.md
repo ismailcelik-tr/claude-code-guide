@@ -91,9 +91,7 @@ Test-driven yaklaşım Claude ile kolaylaşır:
 
 ## → Sonraki Adım
 
-Tüm senaryoları tamamladıysan, tüm bölümleri kapsayan hızlı başvuru kartına bak:
-
-**[Hızlı Başvuru Kartı](../cheatsheet.md)**
+**[Senaryo 05 › Performans Optimizasyonu](./05-performans-optimizasyonu.md)**
 
 ---
 
