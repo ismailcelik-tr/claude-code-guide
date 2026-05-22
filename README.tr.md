@@ -47,18 +47,18 @@ flowchart TD
     P4 -- "❌ test eksik" --> P3
     P5 -- "❌ production patladı" --> P3
 
-    click B00 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/00-baslangic/README.md"
-    click SDLC href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/README.md"
-    click P1 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/01-planlama.md"
-    click P2 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/02-gelistirme.md"
-    click P3 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/03-test-ve-debug.md"
-    click P4 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/04-code-review.md"
-    click P5 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/05-deployment.md"
-    click CMD href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/02-claude-md/README.md"
-    click HOOK href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/03-hooks-otomasyon/README.md"
-    click AJAN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/04-ajanlar/README.md"
-    click PROMPT href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/05-prompt-stratejileri/README.md"
-    click SCN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/06-senaryolar/README.md"
+    click B00 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/00-baslangic/README.tr.md"
+    click SDLC href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/README.tr.md"
+    click P1 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/01-planlama.tr.md"
+    click P2 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/02-gelistirme.tr.md"
+    click P3 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/03-test-ve-debug.tr.md"
+    click P4 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/04-code-review.tr.md"
+    click P5 href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/01-gelistirme-sureci/05-deployment.tr.md"
+    click CMD href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/02-claude-md/README.tr.md"
+    click HOOK href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/03-hooks-otomasyon/README.tr.md"
+    click AJAN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/04-ajanlar/README.tr.md"
+    click PROMPT href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/05-prompt-stratejileri/README.tr.md"
+    click SCN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/06-senaryolar/README.tr.md"
 
     style START fill:#1a1a2e,color:#fff,stroke:#7c3aed
     style KARAR fill:#1e3a5f,color:#fff,stroke:#3b82f6
