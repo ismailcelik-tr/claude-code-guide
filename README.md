@@ -66,6 +66,7 @@ flowchart TD
 
 | # | Bölüm | Ne öğrenirsin |
 |---|---|---|
+| ⚡ | [Hızlı Başvuru Kartı](./cheatsheet.md) | Tüm komutlar, kısayollar, şablonlar ve hook tarifleri tek sayfada |
 | 00 | [Başlangıç](./00-baslangic/README.md) | Claude Code nedir, kurulum, bu repoyu nasıl takip etmelisin |
 | 01 | [Geliştirme Süreci](./01-gelistirme-sureci/README.md) | Planlama → Geliştirme → Test → Review → Deployment |
 | 02 | [CLAUDE.md](./02-claude-md/README.md) | Proje bağlamı kurma, şablonlar, import ve memory |
