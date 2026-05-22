@@ -19,6 +19,7 @@ flowchart TD
     KARAR -->|Otomasyon lazım| HOOK["🟡 03 · Hooks & Otomasyon"]
     KARAR -->|Agent kullanacağım| AJAN["🟠 04 · Ajanlar"]
     KARAR -->|Prompt verimsiz| PROMPT["🔴 05 · Prompt Stratejileri"]
+    KARAR -->|Gerçek örnekler istiyorum| SCN["📖 06 · Senaryolar"]
 
     SDLC --> P1["🟢 Planlama"]
     P1 --> P2["🟢 Geliştirme"]
@@ -41,6 +42,7 @@ flowchart TD
     click HOOK href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/03-hooks-otomasyon/README.md"
     click AJAN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/04-ajanlar/README.md"
     click PROMPT href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/05-prompt-stratejileri/README.md"
+    click SCN href "https://github.com/ismailcelik-tr/claude-code-guide/blob/main/06-senaryolar/README.md"
 
     style START fill:#1a1a2e,color:#fff,stroke:#7c3aed
     style KARAR fill:#1e3a5f,color:#fff,stroke:#3b82f6
@@ -55,6 +57,7 @@ flowchart TD
     style HOOK fill:#713f12,color:#fff,stroke:#eab308
     style AJAN fill:#7c2d12,color:#fff,stroke:#f97316
     style PROMPT fill:#7f1d1d,color:#fff,stroke:#ef4444
+    style SCN fill:#1e3a5f,color:#fff,stroke:#818cf8
 ```
 
 > Renk skalası: 🟢 Kolay başlangıç — 🟡 Orta — 🟠 İleri — 🔴 Dikkat gerektiren  
@@ -73,6 +76,7 @@ flowchart TD
 | 03 | [Hooks & Otomasyon](./03-hooks-otomasyon/README.md) | settings.json, hook tipleri, hazır tarifler |
 | 04 | [Ajanlar](./04-ajanlar/README.md) | Agent tool, subagent tipleri, paralel çalıştırma |
 | 05 | [Prompt Stratejileri](./05-prompt-stratejileri/README.md) | Plan modu, bağlam yönetimi, yaygın hatalar, ileri düzey |
+| 06 | [Gerçek Senaryolar](./06-senaryolar/README.md) | Sıfırdan SaaS, legacy modernizasyon, production krizi, yeni özellik ekleme |
 
 ---
 
