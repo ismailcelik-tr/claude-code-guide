@@ -3,189 +3,79 @@
 > **Hedef kitle:** Her seviyeden software developer  
 > **Amaç:** Uygulama geliştirme sürecinin her aşamasında Claude Code'u en efektif şekilde kullanmak
 
----
-
-## Nasıl Kullanılır?
-
-Aşağıdaki ağaçta **şu an bulunduğun noktayı** seç. Her düğüm ilgili rehbere bağlıdır. Yanlış bir adım attıysan her sayfanın altındaki **↩ Bir Şeyler Ters Gittiyse** tablosu seni doğru noktaya geri getirir.
+Aşağıdaki diyagramda **şu an bulunduğun noktayı** seç ve ilgili bölüme geç. Yanlış bir adım attıysan her sayfanın altındaki **↩ Bir Şeyler Ters Gittiyse** tablosu seni doğru noktaya geri getirir.
 
 ---
 
-## Navigasyon Ağacı
+## Navigasyon
 
+```mermaid
+flowchart TD
+    START([🚀 Başlangıç]) --> KARAR{Neredesin?}
+
+    KARAR -->|Sıfırdan başlıyorum| B00["🟢 00 · Başlangıç\nKurulum & ilk adımlar"]
+    KARAR -->|Uygulama geliştiriyorum| SDLC["🔵 01 · Geliştirme Süreci"]
+    KARAR -->|CLAUDE.md yok / eksik| CMD["🟡 02 · CLAUDE.md"]
+    KARAR -->|Otomasyon lazım| HOOK["🟡 03 · Hooks & Otomasyon"]
+    KARAR -->|Agent kullanacağım| AJAN["🟠 04 · Ajanlar"]
+    KARAR -->|Prompt verimsiz| PROMPT["🔴 05 · Prompt Stratejileri"]
+
+    SDLC --> P1["🟢 Planlama"]
+    P1 --> P2["🟢 Geliştirme"]
+    P2 --> P3["🟡 Test & Debug"]
+    P3 --> P4["🟡 Code Review"]
+    P4 --> P5["🔴 Deployment"]
+
+    P3 -- "❌ hata var" --> P2
+    P4 -- "❌ test eksik" --> P3
+    P5 -- "❌ production patladı" --> P3
+
+    click B00 href "./00-baslangic/README.md"
+    click SDLC href "./01-gelistirme-sureci/README.md"
+    click P1 href "./01-gelistirme-sureci/01-planlama.md"
+    click P2 href "./01-gelistirme-sureci/02-gelistirme.md"
+    click P3 href "./01-gelistirme-sureci/03-test-ve-debug.md"
+    click P4 href "./01-gelistirme-sureci/04-code-review.md"
+    click P5 href "./01-gelistirme-sureci/05-deployment.md"
+    click CMD href "./02-claude-md/README.md"
+    click HOOK href "./03-hooks-otomasyon/README.md"
+    click AJAN href "./04-ajanlar/README.md"
+    click PROMPT href "./05-prompt-stratejileri/README.md"
+
+    style START fill:#1a1a2e,color:#fff,stroke:#7c3aed
+    style KARAR fill:#1e3a5f,color:#fff,stroke:#3b82f6
+    style B00 fill:#14532d,color:#fff,stroke:#22c55e
+    style SDLC fill:#1e3a5f,color:#fff,stroke:#3b82f6
+    style P1 fill:#14532d,color:#fff,stroke:#22c55e
+    style P2 fill:#14532d,color:#fff,stroke:#22c55e
+    style P3 fill:#713f12,color:#fff,stroke:#eab308
+    style P4 fill:#713f12,color:#fff,stroke:#eab308
+    style P5 fill:#7f1d1d,color:#fff,stroke:#ef4444
+    style CMD fill:#713f12,color:#fff,stroke:#eab308
+    style HOOK fill:#713f12,color:#fff,stroke:#eab308
+    style AJAN fill:#7c2d12,color:#fff,stroke:#f97316
+    style PROMPT fill:#7f1d1d,color:#fff,stroke:#ef4444
 ```
-┌─────────────────────────────────────────────────────┐
-│                    BAŞLANGIÇ                        │
-└──────────────────────┬──────────────────────────────┘
-                       │
-                       ▼
-            🔵 Neredesin şu an?
-                       │
-   ┌───────────────────┼────────────────────────────┐
-   │                   │                            │
-   ▼                   ▼                            ▼
-```
 
-<details>
-<summary>🟢 <strong>Claude Code'u hiç kullanmadım, sıfırdan başlıyorum</strong></summary>
-
-👉 [00 › Başlangıç Rehberi](./00-baslangic/README.md)
-
-Bu bölümde:
-- Claude Code nedir, ne değildir
-- Kurulum ve ilk adımlar
-- Bu repoyu nasıl takip etmelisin
-
-> [!TIP]
-> Başlangıç bölümünü okuduktan sonra doğrudan **Geliştirme Süreci** ağacına geçebilirsin.
-
-</details>
+> Renk skalası: 🟢 Kolay başlangıç — 🟡 Orta — 🟠 İleri — 🔴 Dikkat gerektiren  
+> Kırmızı oklar (`❌`) hata durumunda geri dönüş yolunu gösterir.
 
 ---
 
-<details>
-<summary>🟡 <strong>Bir uygulama geliştiriyorum — Claude Code'u sürece entegre etmek istiyorum</strong></summary>
+## Bölümler
 
-👉 [01 › Geliştirme Süreci](./01-gelistirme-sureci/README.md)
-
-```
-01-gelistirme-sureci/
-      │
-      ├── 🟢 Henüz planlamadayım
-      │        └──▶ [Planlama](./01-gelistirme-sureci/01-planlama.md)
-      │
-      ├── 🟢 Aktif olarak kod yazıyorum
-      │        └──▶ [Geliştirme](./01-gelistirme-sureci/02-gelistirme.md)
-      │
-      ├── 🟡 Testler yazıyor veya hata ayıklıyorum
-      │        └──▶ [Test & Debug](./01-gelistirme-sureci/03-test-ve-debug.md)
-      │
-      ├── 🟡 PR / kod inceleme sürecindeyim
-      │        └──▶ [Code Review](./01-gelistirme-sureci/04-code-review.md)
-      │
-      └── 🔴 Deploy aşamasındayım veya CI/CD kuruyorum
-               └──▶ [Deployment](./01-gelistirme-sureci/05-deployment.md)
-```
-
-> [!WARNING]
-> Deployment adımına geçmeden önce test aşamasını tamamladığından emin ol.
-> Atladıysan → [Test & Debug](./01-gelistirme-sureci/03-test-ve-debug.md)
-
-</details>
-
----
-
-<details>
-<summary>🟡 <strong>Projem var ama CLAUDE.md kurmadım / düzgün yapılandırmadım</strong></summary>
-
-👉 [02 › CLAUDE.md Rehberi](./02-claude-md/README.md)
-
-```
-02-claude-md/
-      │
-      ├── 🟢 CLAUDE.md nedir bilmiyorum
-      │        └──▶ [Temel Yapı](./02-claude-md/01-temel-yapi.md)
-      │
-      ├── 🟢 Temel yapıyı biliyorum, projeye özel ayarlamak istiyorum
-      │        └──▶ [Proje Özeli](./02-claude-md/02-proje-ozeli.md)
-      │
-      ├── 🟡 İleri düzey özellikler (import, memory, izinler)
-      │        └──▶ [İleri Düzey](./02-claude-md/03-ileri-duzey.md)
-      │
-      └── 📄 Hazır şablonlar
-               ├──▶ [Minimal](./02-claude-md/ornekler/minimal.md)
-               ├──▶ [Full-Stack](./02-claude-md/ornekler/fullstack.md)
-               └──▶ [Monorepo](./02-claude-md/ornekler/monorepo.md)
-```
-
-> [!CAUTION]
-> CLAUDE.md'yi yanlış dizine koyduysan Claude onu görmez.
-> → [Temel Yapı — Dosya Konumu](./02-claude-md/01-temel-yapi.md#dosya-konumu)
-
-</details>
-
----
-
-<details>
-<summary>🟡 <strong>CLAUDE.md var ama tekrarlayan işleri otomatikleştirmek istiyorum</strong></summary>
-
-👉 [03 › Hooks & Otomasyon](./03-hooks-otomasyon/README.md)
-
-```
-03-hooks-otomasyon/
-      │
-      ├── 🟢 settings.json yapısını anlamak istiyorum
-      │        └──▶ [settings.json](./03-hooks-otomasyon/01-settings-json.md)
-      │
-      ├── 🟡 Hook tiplerini (PreToolUse, PostToolUse…) öğrenmek istiyorum
-      │        └──▶ [Hook Tipleri](./03-hooks-otomasyon/02-hook-tipleri.md)
-      │
-      └── 🟡 Hazır hook tarifleri istiyorum
-               └──▶ [Tarifler](./03-hooks-otomasyon/03-tarifler.md)
-```
-
-> [!WARNING]
-> Hook çalışmıyorsa önce settings.json konumunu kontrol et.
-> → [settings.json — Konum ve Format](./03-hooks-otomasyon/01-settings-json.md#konum-ve-format)
-
-</details>
-
----
-
-<details>
-<summary>🟠 <strong>Agent / subagent kullanacağım veya paralel görevler çalıştırmak istiyorum</strong></summary>
-
-👉 [04 › Ajanlar](./04-ajanlar/README.md)
-
-```
-04-ajanlar/
-      │
-      ├── 🟢 Agent tool nedir, ne zaman kullanılır
-      │        └──▶ [Agent Tool](./04-ajanlar/01-agent-tool.md)
-      │
-      ├── 🟡 Subagent tiplerini (Explore, Plan, code-review…) anlamak istiyorum
-      │        └──▶ [Subagent Tipleri](./04-ajanlar/02-subagent-tipleri.md)
-      │
-      └── 🔴 Paralel ajan çalıştırmak istiyorum
-               └──▶ [Paralel Çalıştırma](./04-ajanlar/03-paralel-calistirma.md)
-```
-
-> [!CAUTION]
-> Ajan sonuç döndürmiyorsa bağımsız görev olup olmadığını kontrol et.
-> → [Paralel Çalıştırma — Ne Zaman Paralel?](./04-ajanlar/03-paralel-calistirma.md#ne-zaman-paralel)
-
-</details>
-
----
-
-<details>
-<summary>🔴 <strong>Prompt'larım verimsiz — Claude beklediğim gibi davranmıyor</strong></summary>
-
-👉 [05 › Prompt Stratejileri](./05-prompt-stratejileri/README.md)
-
-```
-05-prompt-stratejileri/
-      │
-      ├── 🟢 Plan modunu anlayıp kullanmak istiyorum
-      │        └──▶ [Plan Modu](./05-prompt-stratejileri/01-plan-modu.md)
-      │
-      ├── 🟡 Bağlam yönetimi — context dolduğunda ne yapmalıyım
-      │        └──▶ [Bağlam Yönetimi](./05-prompt-stratejileri/02-baglam-yonetimi.md)
-      │
-      ├── 🟡 Yaygın hataları ve kaçınma yollarını görmek istiyorum
-      │        └──▶ [Yaygın Hatalar](./05-prompt-stratejileri/03-yaygin-hatalar.md)
-      │
-      └── 🔴 İleri düzey teknikler (memory, /think, sıkıştırma)
-               └──▶ [İleri Düzey](./05-prompt-stratejileri/04-ileri-duzey.md)
-```
-
-</details>
+| # | Bölüm | Ne öğrenirsin |
+|---|---|---|
+| 00 | [Başlangıç](./00-baslangic/README.md) | Claude Code nedir, kurulum, bu repoyu nasıl takip etmelisin |
+| 01 | [Geliştirme Süreci](./01-gelistirme-sureci/README.md) | Planlama → Geliştirme → Test → Review → Deployment |
+| 02 | [CLAUDE.md](./02-claude-md/README.md) | Proje bağlamı kurma, şablonlar, import ve memory |
+| 03 | [Hooks & Otomasyon](./03-hooks-otomasyon/README.md) | settings.json, hook tipleri, hazır tarifler |
+| 04 | [Ajanlar](./04-ajanlar/README.md) | Agent tool, subagent tipleri, paralel çalıştırma |
+| 05 | [Prompt Stratejileri](./05-prompt-stratejileri/README.md) | Plan modu, bağlam yönetimi, yaygın hatalar, ileri düzey |
 
 ---
 
 ## Hızlı Geri Dönüş Haritası
-
-Herhangi bir aşamada sıkıştıysan bu tablo ile en yakın geri adımı bul:
 
 | Durum | Geri Dön |
 |---|---|
