@@ -4,11 +4,12 @@
 
 # Claude Code Rehberi
 
-[![License: MIT](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](./LICENSE)
-[![Language](https://img.shields.io/badge/Dil-Türkçe-blue?style=for-the-badge)](./README.md)
-[![Built for Claude Code](https://img.shields.io/badge/Claude%20Code%20için-DA7756?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCw1MCkiIGZpbGw9IiNmZmYiPjxyZWN0IHg9Ii00IiB5PSItMzAiIHdpZHRoPSI4IiBoZWlnaHQ9IjI4IiByeD0iNCIvPjxyZWN0IHg9Ii00IiB5PSItMzAiIHdpZHRoPSI4IiBoZWlnaHQ9IjI4IiByeD0iNCIgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIi8+PHJlY3QgeD0iLTQiIHk9Ii0zMCIgd2lkdGg9IjgiIGhlaWdodD0iMjgiIHJ4PSI0IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiLz48cmVjdCB4PSItNCIgeT0iLTMwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyOCIgcng9IjQiIHRyYW5zZm9ybT0icm90YXRlKDEzNSkiLz48cmVjdCB4PSItNCIgeT0iLTMwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyOCIgcng9IjQiIHRyYW5zZm9ybT0icm90YXRlKDE4MCkiLz48cmVjdCB4PSItNCIgeT0iLTMwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyOCIgcng9IjQiIHRyYW5zZm9ybT0icm90YXRlKDIyNSkiLz48cmVjdCB4PSItNCIgeT0iLTMwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyOCIgcng9IjQiIHRyYW5zZm9ybT0icm90YXRlKDI3MCkiLz48cmVjdCB4PSItNCIgeT0iLTMwIiB3aWR0aD0iOCIgaGVpZ2h0PSIyOCIgcng9IjQiIHRyYW5zZm9ybT0icm90YXRlKDMxNSkiLz48L2c+PC9zdmc+&logoColor=white)](https://claude.ai/code)
-[![Scenarios](https://img.shields.io/badge/Senaryolar-6%20Bölüm-8b5cf6?style=for-the-badge)](./06-senaryolar/README.md)
-[![Contributing](https://img.shields.io/badge/Katkı-Açık-orange?style=for-the-badge)](./CONTRIBUTING.md)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=fff)](https://claude.ai/code)
+[![MIT Lisans](https://img.shields.io/badge/Lisans-MIT-22c55e?style=flat-square&logo=opensourceinitiative&logoColor=fff)](./LICENSE)
+[![Dil](https://img.shields.io/badge/Dil-Türkçe-3b82f6?style=flat-square&logo=googletranslate&logoColor=fff)](./README.md)
+[![GitHub](https://img.shields.io/badge/GitHub-ismailcelik--tr-181717?style=flat-square&logo=github&logoColor=fff)](https://github.com/ismailcelik-tr/claude-code-guide)
+[![Rehber](https://img.shields.io/badge/Rehber-6_Bölüm-8b5cf6?style=flat-square&logo=gitbook&logoColor=fff)](./00-baslangic/README.md)
+[![Katkı](https://img.shields.io/badge/Katkı-Açık-f97316?style=flat-square&logo=githubactions&logoColor=fff)](./CONTRIBUTING.md)
 
 **Her seviyeden software developer için uygulama geliştirme sürecinin her aşamasında Claude Code rehberi**
 
