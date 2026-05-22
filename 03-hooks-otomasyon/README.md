@@ -20,6 +20,7 @@ Claude bir araç çağırmadan önce veya sonra, senin belirlediğin bir shell k
 | settings.json yapısı ve konumu | [settings.json](./01-settings-json.md) |
 | PreToolUse, PostToolUse ve diğer hook tipleri | [Hook Tipleri](./02-hook-tipleri.md) |
 | Hazır kullanılabilir tarifler | [Tarifler](./03-tarifler.md) |
+| Tekrarlayan prompt'ları slash komutuna dönüştür | [Özel Komutlar](./04-ozel-komutlar.md) |
 
 ---
 

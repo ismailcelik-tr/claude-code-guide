@@ -93,7 +93,11 @@ Kopyala-yapıştır kullanıma hazır hook örnekleri.
 
 ## → Sonraki Adım
 
-Otomasyonu kurduysan ajan kullanımına geç:
+Tekrarlayan prompt'larını komuta dönüştürmek istiyorsan:
+
+**[03 › Özel Komutlar](./04-ozel-komutlar.md)**
+
+Ya da doğrudan ajan kullanımına geç:
 
 **[04 › Ajanlar](../04-ajanlar/README.md)**
 

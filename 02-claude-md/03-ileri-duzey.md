@@ -35,6 +35,42 @@ Claude Code'un kalıcı belleği `~/.claude/projects/` altında proje başına s
 
 ---
 
+## PROJECT_CONTEXT ve SESSION_CONTEXT ile Bağlam Katmanlama
+
+CLAUDE.md tek dosyada şişmeye başlarsa kalıcı ve geçici bağlamı ayır:
+
+| Dosya | Ne içerir | Ne sıklıkla değişir |
+|---|---|---|
+| `CLAUDE.md` | Davranış kuralları, yasaklar, komutlar | Nadiren |
+| `PROJECT_CONTEXT.md` | Mimari kararlar, teknoloji seçimleri, önemli bağlam | Ayda birkaç kez |
+| `SESSION_CONTEXT.md` | Süren iş, açık kararlar, geçici notlar | Her oturumda |
+
+**CLAUDE.md içine import et:**
+
+```markdown
+@./PROJECT_CONTEXT.md
+@./SESSION_CONTEXT.md
+```
+
+**SESSION_CONTEXT.md örneği:**
+
+```markdown
+# Oturum Bağlamı
+
+## Süren İş
+- Payment modülü yarım kaldı — src/payment/webhook.ts
+
+## Açık Kararlar
+- Retry stratejisi: exponential backoff mı, sabit aralık mı?
+
+## Sonraki Adım
+- Webhook testlerini yaz
+```
+
+Her yeni konuşma başında Claude bu dosyayı okur ve tam olarak kaldığın yerden devam eder. Oturum tamamlandığında SESSION_CONTEXT.md'yi güncelle.
+
+---
+
 ## İzin Yönetimi
 
 `~/.claude/settings.json` veya `.claude/settings.json`:

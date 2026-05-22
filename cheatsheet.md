@@ -167,6 +167,26 @@ Tüm komutlar, kısayollar ve hook tarifleri tek sayfada.
 
 ---
 
+## Özel Komut Şablonu
+
+**`.claude/commands/komut-adi.md`:**
+
+```markdown
+[Ne yapılacağını açıkla]
+
+Adımlar:
+1. [adım]
+2. [adım]
+
+$ARGUMENTS  ← parametre almak için
+```
+
+Kullanım: `/komut-adi [opsiyonel parametre]`
+
+→ Detay: [Özel Komutlar](./03-hooks-otomasyon/04-ozel-komutlar.md)
+
+---
+
 ## Subagent Tipleri
 
 | Tip | Ne Zaman |

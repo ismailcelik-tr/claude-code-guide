@@ -36,6 +36,21 @@ Anthropic hesabınla giriş yapman istenecek.
 
 ---
 
+## Felsefe: Önce Minimal Başla
+
+> Araç ne kadar güçlü olursa olsun, ihtiyaç olmadan kurma.
+
+Claude Code'u efektif kullanmak için her şeyi bir anda kurmak gerekmez. Şu sırayı izle:
+
+1. **Manuel prompt** — önce Claude'u serbest kullan, neye ihtiyacın olduğunu gözlemle
+2. **CLAUDE.md** — Claude aynı şeyi iki kez sorduğunda ekle
+3. **Hook** — tekrarlayan manuel adım fark ettiğinde ekle
+4. **Özel komut** — aynı prompt'u üç kereden fazla yazdığında ekle
+
+Her adımı gerçek bir sürtünme noktası tetiklemelidir — varsayımsal ihtiyaç için değil.
+
+---
+
 ## Önerilen Başlangıç Yolu
 
 ```
