@@ -49,6 +49,14 @@ Konuşma geçmişini sıkıştırır, bağlamı temizler ama bilgiyi korur.
 
 ---
 
+## → Sonraki Adım
+
+Bağlamı yönetmeyi öğrendiysen yaygın hataları gözden geçir:
+
+**[05 › Yaygın Hatalar](./03-yaygin-hatalar.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

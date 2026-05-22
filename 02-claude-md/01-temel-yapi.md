@@ -67,6 +67,14 @@ Claude kod tabanını tarar ve taslak bir CLAUDE.md oluşturur. Ardından gözde
 
 ---
 
+## → Sonraki Adım
+
+Temel yapıyı kurduysun, projeye özel bağlamı ekle:
+
+**[02 › Proje Özeli](./02-proje-ozeli.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

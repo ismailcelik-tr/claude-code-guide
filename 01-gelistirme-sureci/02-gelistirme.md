@@ -57,6 +57,14 @@ Claude Code bazı komutlar için izin ister. Sık kullandığın komutlar için 
 
 ---
 
+## → Sonraki Adım
+
+Kodu yazdıysan test ve hata ayıklama aşamasına geç:
+
+**[01 › Test & Debug](./03-test-ve-debug.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

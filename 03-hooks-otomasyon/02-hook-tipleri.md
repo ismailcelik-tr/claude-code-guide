@@ -84,6 +84,14 @@ Claude işi bitirince çalışır:
 
 ---
 
+## → Sonraki Adım
+
+Hook tiplerini öğrendin, hazır tariflerle uygula:
+
+**[03 › Tarifler](./03-tarifler.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

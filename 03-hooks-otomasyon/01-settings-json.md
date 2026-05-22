@@ -58,6 +58,14 @@ Glob desteklenir: `*` tek segment, `**` çok segment.
 
 ---
 
+## → Sonraki Adım
+
+settings.json yapısını anladıysan hook tiplerini öğren:
+
+**[03 › Hook Tipleri](./02-hook-tipleri.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

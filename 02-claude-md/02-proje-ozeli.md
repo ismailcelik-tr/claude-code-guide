@@ -68,6 +68,14 @@ proje/
 
 ---
 
+## → Sonraki Adım
+
+CLAUDE.md'yi parçalamak veya memory/izin yönetimini öğrenmek istiyorsan:
+
+**[02 › İleri Düzey](./03-ileri-duzey.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

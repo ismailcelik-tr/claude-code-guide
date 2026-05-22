@@ -48,6 +48,14 @@ CLAUDE.md'yi henüz bilmiyorsan paralelde şunu da oku:
 
 ---
 
+## → Sonraki Adım
+
+Kurulumu tamamladıysan sürece başla:
+
+**[01 › Geliştirme Süreci — Planlama](../01-gelistirme-sureci/01-planlama.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

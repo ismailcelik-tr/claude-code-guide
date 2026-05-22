@@ -58,6 +58,14 @@ Claude Code'un kalıcı belleği `~/.claude/projects/` altında proje başına s
 
 ---
 
+## → Sonraki Adım
+
+CLAUDE.md'yi kurduysun, tekrarlayan işleri otomatikleştir:
+
+**[03 › Hooks & Otomasyon](../03-hooks-otomasyon/README.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

@@ -50,6 +50,18 @@ Claude; migration, env var, bağımlılık, health check gibi maddeleri listeler
 
 ---
 
+## → Sonraki Adım
+
+Süreci otomatikleştirmek istiyorsan:
+
+**[03 › Hooks & Otomasyon](../03-hooks-otomasyon/README.md)**
+
+Ya da Claude Code'u daha verimli kullanmak için:
+
+**[05 › Prompt Stratejileri](../05-prompt-stratejileri/README.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

@@ -66,6 +66,14 @@ Uzun konuşmalarda bağlamı temizler:
 
 ---
 
+## → Sonraki Adım
+
+Tüm bölümleri tamamladıysan başa dön ve eksik kaldığın noktayı seç:
+
+**[Ana Navigasyon](../README.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

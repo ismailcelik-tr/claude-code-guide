@@ -48,6 +48,14 @@ Bu komut PR'daki değişiklikleri okur ve GitHub'a inline yorum olarak gönderir
 
 ---
 
+## → Sonraki Adım
+
+Review tamamsa deploy aşamasına geç:
+
+**[01 › Deployment](./05-deployment.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

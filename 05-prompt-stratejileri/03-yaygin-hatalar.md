@@ -65,6 +65,14 @@ Claude bir şeyi "yaptım" dedi diye test etmeden geçme. Her önemli değişikl
 
 ---
 
+## → Sonraki Adım
+
+Yaygın hatalardan kaçınmayı öğrendiysen ileri düzey tekniklere geç:
+
+**[05 › İleri Düzey](./04-ileri-duzey.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

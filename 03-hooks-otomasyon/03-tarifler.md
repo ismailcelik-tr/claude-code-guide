@@ -91,6 +91,14 @@ Kopyala-yapıştır kullanıma hazır hook örnekleri.
 
 ---
 
+## → Sonraki Adım
+
+Otomasyonu kurduysan ajan kullanımına geç:
+
+**[04 › Ajanlar](../04-ajanlar/README.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

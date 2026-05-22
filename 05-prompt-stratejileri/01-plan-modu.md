@@ -49,6 +49,14 @@ ya da doğal dil ile:
 
 ---
 
+## → Sonraki Adım
+
+Plan modunu anladıysan bağlam yönetimini öğren:
+
+**[05 › Bağlam Yönetimi](./02-baglam-yonetimi.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

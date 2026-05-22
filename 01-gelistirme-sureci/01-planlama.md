@@ -61,6 +61,14 @@ Her adımı onayladıktan sonra bir sonrakine geç.
 
 ---
 
+## → Sonraki Adım
+
+Planını onayladıysan koda geçme zamanı:
+
+**[01 › Geliştirme](./02-gelistirme.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

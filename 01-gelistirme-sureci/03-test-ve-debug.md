@@ -62,6 +62,14 @@ Bu genellikle mock/gerçek ortam farkından kaynaklanır.
 
 ---
 
+## → Sonraki Adım
+
+Testler geçiyorsa kodu incelemeye hazırsın:
+
+**[01 › Code Review](./04-code-review.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

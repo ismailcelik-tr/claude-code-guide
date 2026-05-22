@@ -43,6 +43,14 @@ Her ajan bağımsız bir Claude örneğidir — token maliyeti katlanır. Sadece
 
 ---
 
+## → Sonraki Adım
+
+Ajanları öğrendiysen prompt stratejilerine geç:
+
+**[05 › Prompt Stratejileri](../05-prompt-stratejileri/README.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

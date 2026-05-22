@@ -44,6 +44,14 @@ Araştırma + uygulama birlikte yapılacaksa ya da özel araç erişimi gerekiyo
 
 ---
 
+## → Sonraki Adım
+
+Subagent tiplerini öğrendiysen paralel çalıştırmayı dene:
+
+**[04 › Paralel Çalıştırma](./03-paralel-calistirma.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |

@@ -44,6 +44,14 @@ Ajan bir önceki konuşmayı **görmez**. Prompt'u kendi kendine anlaşılır ya
 
 ---
 
+## → Sonraki Adım
+
+Agent tool'u anladıysan doğru subagent tipini seçmeyi öğren:
+
+**[04 › Subagent Tipleri](./02-subagent-tipleri.md)**
+
+---
+
 ## ↩ Bir Şeyler Ters Gittiyse
 
 | Durum | Geri Dön |
