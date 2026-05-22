@@ -1,36 +1,36 @@
-# Güvenlik Politikası
+# Security Policy
 
 ---
 
-## Bu Repo Hakkında
+## About This Repo
 
-Bu repo yalnızca **dokümantasyon** içerir — çalıştırılabilir kod barındırmaz. Klasik bir güvenlik açığı bildirimi senaryosu geçerli değildir.
+This repo contains only **documentation** — it does not include executable code. The classic security vulnerability disclosure scenario does not apply here.
 
-Ancak içerikteki güvenlik açısından **yanlış veya tehlikeli tavsiyeler** için aşağıdaki süreci izle.
-
----
-
-## Güvenlik Açısından Hatalı İçerik Bildirme
-
-Rehberde güvenlik riski oluşturabilecek bir tavsiye (örneğin: tehlikeli izin önerisi, secret yönetimi hatası, güvensiz hook örneği) gördüysen:
-
-1. **Kamuya açık issue açma** — önce e-posta ile bildir
-2. İletişim: GitHub üzerinden [@ismailcelik-tr](https://github.com/ismailcelik-tr) profiline DM gönder
-3. Konu başlığına `[SECURITY]` ekle
+However, please follow the process below for **incorrect or dangerous security advice** in the content.
 
 ---
 
-## Güvenli Kullanım Hatırlatmaları
+## Reporting Incorrect Security Content
 
-Bu rehberi uygularken şunlara dikkat et:
+If you see advice in the guide that could create a security risk (for example: a dangerous permission suggestion, a secret management mistake, an unsafe hook example):
 
-- **Secret ve API key'leri Claude'a yapıştırma** — sadece değişken adlarını paylaş
-- **`deny` listesini boş bırakma** — en azından `rm -rf` ve `git push --force` engelle
-- **Hook komutlarını production'da test et** — beklenmedik yan etkileri önlemek için önce staging'de dene
-- **settings.json'ı git'e commit etmeden önce** içinde hassas bilgi olmadığını kontrol et
+1. **Don't open a public issue** — report by email/DM first
+2. Contact: send a DM to [@ismailcelik-tr](https://github.com/ismailcelik-tr) on GitHub
+3. Add `[SECURITY]` to the subject line
 
 ---
 
-## Teşekkür
+## Safe Usage Reminders
 
-Güvenlik bildirimi yapan katkıcılar CONTRIBUTING.md'de belirtilecektir (isterlerse).
+When applying this guide, keep the following in mind:
+
+- **Never paste secrets or API keys into Claude** — only share variable names
+- **Don't leave the `deny` list empty** — at minimum, block `rm -rf` and `git push --force`
+- **Test hook commands before using in production** — try them in staging first to prevent unexpected side effects
+- **Before committing settings.json to git** — verify it contains no sensitive information
+
+---
+
+## Acknowledgment
+
+Contributors who submit security reports will be credited in CONTRIBUTING.md (if they wish).

@@ -1,110 +1,110 @@
-# Claude Code — Hızlı Başvuru Kartı
+# Claude Code — Quick Reference Card
 
-Tüm komutlar, kısayollar ve hook tarifleri tek sayfada.
+All commands, shortcuts, and hook recipes in one page.
 
 ---
 
-## Slash Komutları
+## Slash Commands
 
-| Komut | Ne Yapar |
+| Command | What It Does |
 |---|---|
-| `/init` | Mevcut projeyi tarayıp `CLAUDE.md` taslağı oluşturur |
-| `/plan` | Plan moduna girer — Claude uygulamaya başlamadan önce onay bekler |
-| `/review` | Mevcut diff'i kod kalitesi açısından inceler |
-| `/review --comment` | Review bulgularını GitHub PR'a inline yorum olarak gönderir |
-| `/think` | Claude'u daha derin, adım adım düşünmeye yönlendirir |
-| `/compact` | Konuşma geçmişini sıkıştırır, bağlamı temizler ama bilgiyi korur |
-| `/help` | Kullanılabilir komutların listesini gösterir |
-| `/clear` | Konuşmayı temizler, yeni bir oturum başlatır |
+| `/init` | Scans the current project and generates a `CLAUDE.md` draft |
+| `/plan` | Enters plan mode — Claude waits for approval before implementing |
+| `/review` | Inspects the current diff for code quality |
+| `/review --comment` | Posts review findings as inline comments on a GitHub PR |
+| `/think` | Guides Claude toward deeper, step-by-step reasoning |
+| `/compact` | Compresses conversation history, clears context while preserving knowledge |
+| `/help` | Shows the list of available commands |
+| `/clear` | Clears the conversation and starts a new session |
 
 ---
 
-## Klavye Kısayolları
+## Keyboard Shortcuts
 
-| Kısayol | Ne Yapar |
+| Shortcut | What It Does |
 |---|---|
-| `Esc` | Çalışan işlemi iptal eder |
-| `Ctrl + C` | Mevcut görevi durdurur |
-| `↑ / ↓` | Önceki mesajlar arasında gezinir |
+| `Esc` | Cancels the running operation |
+| `Ctrl + C` | Stops the current task |
+| `↑ / ↓` | Navigate through previous messages |
 
 ---
 
-## Prompt Şablonları
+## Prompt Templates
 
-### Dosya Düzenleme
+### File Editing
 ```
-"[dosya yolu] dosyasındaki [fonksiyon/bölüm] için [ne yapılacak].
- Mevcut [test/yapı]yı bozmadan yap."
-```
-
-### Hata Ayıklama
-```
-"Şu hatayı alıyorum:
- [hata mesajı]
- [dosya yolu] dosyasını oku ve kök nedeni bul."
+"For [function/section] in [file path], [what to do].
+ Do it without breaking the existing [test/structure]."
 ```
 
-### Test Üretme
+### Debugging
 ```
-"[dosya yolu] için unit testler yaz.
- Mevcut test stilini [test dizini] klasöründen öğren."
-```
-
-### Plan İsteme
-```
-"Uygulamaya başlamadan önce planını göster, onaylayayım.
- [görev açıklaması]"
+"I'm getting this error:
+ [error message]
+ Read [file path] and find the root cause."
 ```
 
-### Ajan Görevi
+### Generating Tests
 ```
-"Explore subagent'i kullanarak [ne aranacak].
- Bağlam: [proje bilgisi]
- Döndür: [format]"
-```
-
-### Paralel Görev
-```
-"Şu iki görevi paralel çalıştır:
- 1. [bağımsız görev A]
- 2. [bağımsız görev B]"
+"Write unit tests for [file path].
+ Learn the existing test style from the [test directory] folder."
 ```
 
-### Çıktı Formatı Belirleme
+### Requesting a Plan
 ```
-"Sonucu şu formatta döndür:
- - Sorun: [ne]
- - Neden: [kök neden]
- - Çözüm: [adımlar]
- - Risk: [yan etkiler]"
+"Show me your plan before you start implementing, so I can approve it.
+ [task description]"
+```
+
+### Agent Task
+```
+"Use an Explore subagent to [what to search for].
+ Context: [project info]
+ Return: [format]"
+```
+
+### Parallel Task
+```
+"Run these two tasks in parallel:
+ 1. [independent task A]
+ 2. [independent task B]"
+```
+
+### Specifying Output Format
+```
+"Return the result in this format:
+ - Problem: [what]
+ - Why: [root cause]
+ - Solution: [steps]
+ - Risk: [side effects]"
 ```
 
 ---
 
-## CLAUDE.md Minimum Şablon
+## CLAUDE.md Minimal Template
 
 ```markdown
-# Proje Adı
+# Project Name
 
-## Genel Bakış
-[1-2 cümle]
+## Overview
+[1-2 sentences]
 
-## Teknoloji
-- [Dil / Framework]
-- [Veritabanı]
+## Tech Stack
+- [Language / Framework]
+- [Database]
 
-## Komutlar
-- [geliştirme komutu]
-- [test komutu]
+## Commands
+- [dev command]
+- [test command]
 
-## Kurallar
-- [kural 1]
-- [kural 2]
+## Rules
+- [rule 1]
+- [rule 2]
 ```
 
 ---
 
-## settings.json Minimum Şablon
+## settings.json Minimal Template
 
 ```json
 {
@@ -128,13 +128,13 @@ Tüm komutlar, kısayollar ve hook tarifleri tek sayfada.
 }
 ```
 
-**Dosya konumu:** `~/.claude/settings.json` (global) veya `.claude/settings.json` (proje)
+**File location:** `~/.claude/settings.json` (global) or `.claude/settings.json` (project)
 
 ---
 
-## Hazır Hook Tarifleri
+## Ready-to-Use Hook Recipes
 
-### Otomatik Lint (her düzenlemede)
+### Auto Lint (on every edit)
 ```json
 "PostToolUse": [{
   "matcher": "Edit",
@@ -142,22 +142,22 @@ Tüm komutlar, kısayollar ve hook tarifleri tek sayfada.
 }]
 ```
 
-### Tehlikeli Komut Engelleme
+### Block Dangerous Commands
 ```json
 "PreToolUse": [{
   "matcher": "Bash",
-  "hooks": [{ "type": "command", "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -qE 'rm -rf|drop table|truncate'; then echo 'Engellendi!' >&2; exit 2; fi" }]
+  "hooks": [{ "type": "command", "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -qE 'rm -rf|drop table|truncate'; then echo 'Blocked!' >&2; exit 2; fi" }]
 }]
 ```
 
-### Tamamlanma Bildirimi (macOS)
+### Completion Notification (macOS)
 ```json
 "Stop": [{
-  "hooks": [{ "type": "command", "command": "osascript -e 'display notification \"Görev tamamlandı\" with title \"Claude Code\" sound name \"Glass\"'" }]
+  "hooks": [{ "type": "command", "command": "osascript -e 'display notification \"Task completed\" with title \"Claude Code\" sound name \"Glass\"'" }]
 }]
 ```
 
-### Commit Öncesi Test
+### Run Tests Before Commit
 ```json
 "PreToolUse": [{
   "matcher": "Bash(git commit*)",
@@ -167,56 +167,56 @@ Tüm komutlar, kısayollar ve hook tarifleri tek sayfada.
 
 ---
 
-## Özel Komut Şablonu
+## Custom Command Template
 
-**`.claude/commands/komut-adi.md`:**
+**`.claude/commands/command-name.md`:**
 
 ```markdown
-[Ne yapılacağını açıkla]
+[Describe what to do]
 
-Adımlar:
-1. [adım]
-2. [adım]
+Steps:
+1. [step]
+2. [step]
 
-$ARGUMENTS  ← parametre almak için
+$ARGUMENTS  ← to accept a parameter
 ```
 
-Kullanım: `/komut-adi [opsiyonel parametre]`
+Usage: `/command-name [optional parameter]`
 
-→ Detay: [Özel Komutlar](./03-hooks-otomasyon/04-ozel-komutlar.md)
-
----
-
-## Subagent Tipleri
-
-| Tip | Ne Zaman |
-|---|---|
-| `Explore` | Sadece okuma/araştırma — dosya değiştirmez |
-| `Plan` | Uygulamadan önce mimari/yaklaşım onayı |
-| `claude` | Araştırma + uygulama birlikte |
-| `general-purpose` | Geniş kapsamlı çok adımlı görevler |
+→ Details: [Custom Commands](./03-hooks-automation/04-custom-commands.md)
 
 ---
 
-## Yaygın Hatalar ve Kaçınma Yolları
+## Subagent Types
 
-| Hata | Çözüm |
+| Type | When |
 |---|---|
-| Belirsiz görev | Dosya yolu + fonksiyon adı + beklenen davranış ver |
-| Görev çok büyük | `/plan` ile parçala, birer birer onayla |
-| Claude projeyi unutuyor | Talimatı CLAUDE.md'ye taşı |
-| Bağlam doldu | `/compact` çalıştır veya yeni konuşma başlat |
-| Ajan yanlış sonuç | Prompt'u bağımsız yaz — önceki konuşmayı bilmiyor |
-| Hook tetiklenmiyor | `.claude/settings.json` konumunu kontrol et |
+| `Explore` | Read-only research — doesn't modify files |
+| `Plan` | Architectural/approach approval before implementation |
+| `claude` | Research + implementation together |
+| `general-purpose` | Broad, multi-step tasks |
 
 ---
 
-## Faydalı Bağlantılar
+## Common Mistakes and How to Avoid Them
 
-| Bölüm | Dosya |
+| Mistake | Fix |
 |---|---|
-| CLAUDE.md nasıl yazılır | [02 › CLAUDE.md](./02-claude-md/README.md) |
-| Hook tipleri ve örnekler | [03 › Hooks & Otomasyon](./03-hooks-otomasyon/README.md) |
-| Ajan kullanımı | [04 › Ajanlar](./04-ajanlar/README.md) |
-| Prompt stratejileri | [05 › Prompt Stratejileri](./05-prompt-stratejileri/README.md) |
-| Tam navigasyon | [Ana Sayfa](./README.md) |
+| Vague task | Give file path + function name + expected behavior |
+| Task too large | Break it down with `/plan`, approve one step at a time |
+| Claude is forgetting the project | Move the instructions to CLAUDE.md |
+| Context is full | Run `/compact` or start a new conversation |
+| Agent returned wrong result | Write the prompt independently — it doesn't know the previous conversation |
+| Hook not triggering | Check the location of `.claude/settings.json` |
+
+---
+
+## Useful Links
+
+| Section | File |
+|---|---|
+| How to write CLAUDE.md | [02 › CLAUDE.md](./02-claude-md/README.md) |
+| Hook types and examples | [03 › Hooks & Automation](./03-hooks-automation/README.md) |
+| Agent usage | [04 › Agents](./04-agents/README.md) |
+| Prompt strategies | [05 › Prompt Strategies](./05-prompt-strategies/README.md) |
+| Full navigation | [Home](./README.md) |

@@ -1,45 +1,45 @@
-# Katkı Rehberi
+# Contributing Guide
 
-Bu repoya katkı yapmak istediğin için teşekkürler.
-
----
-
-## Nasıl Katkı Yapabilirsin?
-
-### Hata veya Eksik Bilgi Bildirme
-
-Bir sayfada hatalı veya güncel olmayan bilgi gördüysen:
-
-1. [Issue aç](https://github.com/ismailcelik-tr/claude-code-guide/issues/new)
-2. Hangi dosya ve bölümde olduğunu belirt
-3. Doğru olması gereken bilgiyi ekle
-
-### İçerik Katkısı (PR)
-
-1. Repoyu fork'la
-2. Yeni bir branch oluştur: `git checkout -b icerik/konu-adi`
-3. Değişikliğini yap
-4. PR aç — başlıkta hangi bölümü etkilediğini belirt
+Thanks for wanting to contribute to this repo.
 
 ---
 
-## İçerik Standartları
+## How to Contribute
 
-- **Dil:** Türkçe
-- **Hedef kitle:** Software developer'lar (başlangıçtan ileri düzeye)
-- **Kod örnekleri:** Gerçek, çalışan örnekler olmalı
-- **Her sayfada:** `## → Sonraki Adım` ve `## ↩ Bir Şeyler Ters Gittiyse` bölümleri olmalı
-- **Bağlantılar:** Göreli path (`../dizin/dosya.md`) kullan — diyagram `click href` direktiflerinde tam URL gerekir
+### Reporting Errors or Missing Information
 
-## Yeni Bölüm Eklerken
+If you find incorrect or outdated information on a page:
 
-1. Dizin numarasını sırayla ver (`07-yeni-konu/`)
-2. `README.md` navigasyon diyagramına yeni `click` ve `style` satırı ekle
-3. Bölümler tablosuna satır ekle
-4. `cheatsheet.md`'ye ilgili referansı ekle
+1. [Open an issue](https://github.com/ismailcelik-tr/claude-code-guide/issues/new)
+2. Specify which file and section it's in
+3. Include what the correct information should be
+
+### Content Contribution (PR)
+
+1. Fork the repo
+2. Create a new branch: `git checkout -b content/topic-name`
+3. Make your change
+4. Open a PR — indicate which section it affects in the title
 
 ---
 
-## Sorular
+## Content Standards
 
-Bir şeyden emin değilsen önce issue aç, sonra PR yap.
+- **Language:** English (for `.md` files), Turkish (for `.tr.md` files)
+- **Target audience:** Software developers (beginner to advanced)
+- **Code examples:** Must be real, working examples
+- **Every page must have:** `## → Next Step` and `## ↩ Something Went Wrong` sections
+- **Links:** Use relative paths (`../directory/file.md`) — diagram `click href` directives require full URLs
+
+## Adding a New Section
+
+1. Number the directory sequentially (`07-new-topic/`)
+2. Add a new `click` and `style` line to the navigation diagram in `README.md`
+3. Add a row to the sections table
+4. Add the relevant reference to `cheatsheet.md`
+
+---
+
+## Questions
+
+If you're unsure about something, open an issue first, then submit a PR.

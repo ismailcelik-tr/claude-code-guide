@@ -1,39 +1,39 @@
 # 02 › CLAUDE.md
 
-CLAUDE.md, Claude Code'un bir projeyi anlaması için oluşturduğun kalıcı talimat dosyasıdır.
+CLAUDE.md is the persistent instruction file you create so Claude Code understands your project.
 
 ---
 
-## Neden Önemli?
+## Why Does It Matter?
 
-Her yeni konuşmada Claude projeyi sıfırdan keşfetmek zorunda kalır. CLAUDE.md bu keşfi atlar — Claude dosyayı okur ve projeye hazır hale gelir.
+In every new conversation, Claude has to rediscover the project from scratch. CLAUDE.md skips this discovery — Claude reads the file and is ready for your project.
 
 ---
 
-## Bölümler
+## Sections
 
-| Konu | Dosya |
+| Topic | File |
 |---|---|
-| CLAUDE.md nedir, nereye konur | [Temel Yapı](./01-temel-yapi.md) |
-| Projeye özel ayarlamalar | [Proje Özeli](./02-proje-ozeli.md) |
-| Import, memory, izin yönetimi | [İleri Düzey](./03-ileri-duzey.md) |
+| What is CLAUDE.md, where does it go | [Basic Structure](./01-basic-structure.md) |
+| Project-specific customizations | [Project-Specific](./02-project-specific.md) |
+| Import, memory, permission management | [Advanced](./03-advanced.md) |
 
 ---
 
-## Hazır Şablonlar
+## Ready-to-Use Templates
 
-| Şablon | Kullanım Durumu |
+| Template | Use Case |
 |---|---|
-| [Minimal](./ornekler/minimal.md) | Küçük proje veya hızlı başlangıç |
-| [Full-Stack](./ornekler/fullstack.md) | Frontend + backend projeler |
-| [Monorepo](./ornekler/monorepo.md) | Birden fazla paket barındıran repolar |
+| [Minimal](./examples/minimal.md) | Small project or quick start |
+| [Full-Stack](./examples/fullstack.md) | Frontend + backend projects |
+| [Monorepo](./examples/monorepo.md) | Repos with multiple packages |
 
 ---
 
-## ↩ Bir Şeyler Ters Gittiyse
+## ↩ Something Went Wrong
 
-| Durum | Geri Dön |
+| Situation | Go back to |
 |---|---|
-| Claude CLAUDE.md'yi görmüyor | [Temel Yapı — Dosya Konumu](./01-temel-yapi.md#dosya-konumu) |
-| CLAUDE.md var ama etkisiz | [Proje Özeli](./02-proje-ozeli.md) |
-| Otomasyona geçmek istiyorum | [Hooks & Otomasyon](../03-hooks-otomasyon/README.md) |
+| Claude doesn't see CLAUDE.md | [Basic Structure — File Location](./01-basic-structure.md#file-location) |
+| CLAUDE.md exists but has no effect | [Project-Specific](./02-project-specific.md) |
+| Want to move to automation | [Hooks & Automation](../03-hooks-automation/README.md) |
